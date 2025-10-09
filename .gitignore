@@ -1,0 +1,38 @@
+# Fichiers générés par le système de build (CMake)
+# Le plus important !
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Fichiers de build courants
+Makefile
+*.vcxproj
+*.sln
+*.suo
+
+# Fichiers compilés et bibliothèques
+*.exe
+*.out
+*.dll
+*.so
+*.a
+*.lib
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# Fichiers de configuration de l'éditeur
+# Très important pour le travail en équipe
+.vscode/
+
+# Cache Python généré
+__pycache__/
+*.pyc
+
+# Fichiers temporaires et système
+*~
+.DS_Store
+Thumbs.db
