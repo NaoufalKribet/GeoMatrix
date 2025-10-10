@@ -31,7 +31,7 @@ target_include_directories(geomath INTERFACE include)
 
 # --- 4. Configuration des Tests Unitaires ---
 # Créer l'exécutable de test avec un nom différent
-add_executable(geomath_tests tests/test_main.cpp)
+add_executable(geomath_tests tests/test_vector.cpp)
 target_link_libraries(geomath_tests PRIVATE geomath GTest::gtest_main)
 
 # Ajouter les tests CTest (optionnel, peut être désactivé)
