@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "pybind11>=2.12"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geomath"
+version = "0.1.0"
+authors = [
+  { name="Naoufal Kribet", email="votre.email@example.com" },
+]
+description = "Une bibliothèque d'algèbre linéaire C++ avec bindings Python"
+readme = "README.md"
+requires-python = ">=3.8"
+# CORRECTION (Optionnelle mais bonne pratique) : Simplifier la licence
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: C++",
+]
+
+# --- SECTION AJOUTÉE ---
+[tool.setuptools]
+# On dit explicitement à setuptools : "Le seul paquet Python à installer est celui qui se trouve dans le dossier 'geomath_py'".
+packages = ["geomath_py"]

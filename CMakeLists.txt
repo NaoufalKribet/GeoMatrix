@@ -41,3 +41,19 @@ add_test(NAME GeomathTests COMMAND geomath_tests)
 # --- 5. Configuration des Bindings Python ---
 pybind11_add_module(geomath_py bindings/geomath_bindings.cpp)
 target_link_libraries(geomath_py PRIVATE geomath)
+
+set(PYTHON_MODULE_OUTPUT_DIR ${CMAKE_SOURCE_DIR}/geomath_py)
+
+# Commande pour créer ce dossier
+add_custom_command(
+    TARGET geomath_py POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${PYTHON_MODULE_OUTPUT_DIR}
+)
+
+# Commande pour copier le module compilé vers ce dossier de sortie
+add_custom_command(
+    TARGET geomath_py POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+            $<TARGET_FILE:geomath_py>
+            ${PYTHON_MODULE_OUTPUT_DIR}
+)

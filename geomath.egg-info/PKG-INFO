@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: geomath
+Version: 0.1.0
+Summary: Une bibliothèque d'algèbre linéaire C++ avec bindings Python
+Author-email: Naoufal Kribet <votre.email@example.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file

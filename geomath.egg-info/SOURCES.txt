@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+geomath.egg-info/PKG-INFO
+geomath.egg-info/SOURCES.txt
+geomath.egg-info/dependency_links.txt
+geomath.egg-info/top_level.txt
